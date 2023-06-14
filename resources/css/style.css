@@ -1,0 +1,236 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* HEADER */
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 33px 9%;
+  background: linear-gradient(315deg, #ffcc2f -130%, #ef5734 79%);
+}
+.logo{
+  font-size: 30px;
+  font-weight: 1000;
+  color: white;
+}
+.navlist{
+  display: flex;
+}
+.navlist a{
+  color: white;
+  margin-left: 60px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  transition: all .55s ease;
+}
+.navlist a:hover{
+  border-bottom: 2px solid white;
+}
+.navlist a i{
+  font-size: 22px;
+}
+.navlist #login-btn{
+  background: #ef5734;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  transition: all .55s ease;
+  border: 1px solid transparent;
+}
+.navlist #login-btn:hover{
+  border-bottom: none;
+  background: transparent;
+  border: 1px solid white;
+}
+
+
+/* LOGIN PANEL */
+
+.login-box{
+  position: absolute;
+  /* bottom: 100%;
+  right: 9%;
+  top: -1000%; */
+  top: 100%;
+  right: -100%;
+  width: 400px;
+  height: 420px;
+  background: #ef5734;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20PX 20px;
+  transition: all .55s ease;
+  border-radius: 10px;
+}
+
+.login-box.open{
+  /* top: 80%; */
+  right: 5%;
+}
+
+.login-box .login-username-box .login-user{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100px;
+  border-radius: 10px;
+  border: none;
+}
+.login-box .login-password-box .login-password{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100px;
+  border-radius: 10px;
+  border: none;
+}
+.login-box .login-username-box,
+.login-box .login-password-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 20px;
+  padding: 5px 10px;
+  width: 100%;
+  height: auto;
+  color: black;
+}
+.login-box .login-username-box .lbl,
+.login-box .login-password-box .lbl{
+  margin-bottom: 3px;
+  font-size: 17px;
+  font-weight: 400;
+}
+.login-box h1{
+  margin-bottom: 15px;
+  margin-top: 10px;
+  font-size: 40px;
+  
+}
+.login-box .login-register-box{
+  margin-top: 20px;
+}
+.login-box .login-register-box p{    
+  color: black;
+  font-size: 14px;
+  font-weight: 200;
+}
+.login-box .login-register-box a{
+  color: black;
+  font-size: 13px;
+  border-bottom: 1px solid black;
+  transition: all .20s ease;
+}
+.login-box .login-register-box a:hover{
+  color: white;
+  border-bottom: 1px solid white;
+}
+.login-box .login-register-box{
+  position: absolute;
+  bottom: 5%;
+}
+
+.login-box .login-btn-box .login-btn{
+  background: #c53b1b;
+  padding: 12px 40px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  transition: all .55s ease;
+  font-size: 20px;
+  border: 1px solid transparent;
+  box-shadow: 1px 1px 3px black;
+}
+.login-box .login-btn-box .login-btn:hover{
+  border-bottom: none;
+  background: transparent;
+  border: 1px solid white;
+  box-shadow: none;
+}
+
+/* CART ITEM */
+.main-panel{
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(315deg, #ffcc2f 0%, #ef5734 79%);
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+.main-box{
+  background-color: wheat;
+  margin: 20px 50px;
+  width: auto;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.main-box .main-box-image{
+  min-width: 160px;
+  height: 160px;
+  line-height: 160px;
+  text-align: center;
+  background-color: white;
+  margin:0px 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.main-box .main-box-image img{
+  width: 130px;
+  height: auto;
+}
+.main-box-quantity{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 150px;
+}
+.item-qty{
+  width: 50px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+.plus-btn{
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+}
+.minus-btn{
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+}
+
+.main-box-info{
+  margin: 20px;
+  padding: 10px;
+}
+.main-box-info p{
+  font-size: 20px;
+}
